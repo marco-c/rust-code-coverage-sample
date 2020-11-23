@@ -5,6 +5,11 @@ First of all, install grcov
 cargo install grcov
 ```
 
+Second, install the llvm-tools Rust component (`llvm-tools-preview` for now, it might become `llvm-tools` soon):
+```sh
+rustup component add llvm-tools-preview
+```
+
 # Generate source-based coverage
 
 ```sh
