@@ -14,8 +14,8 @@ export RUSTFLAGS="-Zinstrument-coverage"
 # Build the program
 cargo build
 
-# Run the program (you can replace this with `cargo run`, or with `cargo test` if you want to collect code coverage for your tests).
-./target/debug/rust-code-coverage-sample
+# Run the program (you can replace this with `cargo test` if you want to collect code coverage for your tests).
+cargo run
 
 # Generate a HTML report in the coverage/ directory.
 grcov . --binary-path ./target/debug/rust-code-coverage-sample -s . -t html --branch --ignore-not-existing -o ./coverage/
@@ -39,8 +39,8 @@ export RUSTFLAGS="-Zprofile -Ccodegen-units=1 -Copt-level=0 -Clink-dead-code -Co
 # Build the program
 cargo build
 
-# Run the program (you can replace this with `cargo run`, or with `cargo test` if you want to collect code coverage for your tests).
-./target/debug/rust-code-coverage-sample
+# Run the program (you can replace this with `cargo test` if you want to collect code coverage for your tests).
+cargo run
 
 # Generate a HTML report in the coverage/ directory.
 grcov . --llvm -s . -t html --branch --ignore-not-existing -o ./coverage/
