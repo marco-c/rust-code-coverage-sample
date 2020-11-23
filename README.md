@@ -1,3 +1,5 @@
+N.B.: At the moment, the nightly channel of Rust is required.
+
 First of all, install grcov
 ```sh
 cargo install grcov
