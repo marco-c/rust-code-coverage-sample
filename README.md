@@ -13,7 +13,7 @@ rustup component add llvm-tools-preview
 # Generate source-based coverage
 
 ```sh
-rm -rf ./target *.prof* *.info
+rm -rf ./target *.prof*
 
 # Export the flags needed to instrument the program to collect code coverage.
 export RUSTFLAGS="-Zinstrument-coverage"
