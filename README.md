@@ -25,10 +25,10 @@ cargo build
 cargo run
 
 # Generate a HTML report in the coverage/ directory.
-grcov . --binary-path ./target/debug/rust-code-coverage-sample -s . -t html --branch --ignore-not-existing -o ./coverage/
+grcov . --binary-path ./target/debug/ -s . -t html --branch --ignore-not-existing -o ./coverage/
 
 # Generate a LCOV report and upload it to codecov.io.
-grcov . --binary-path ./target/debug/rust-code-coverage-sample -s . -t lcov --branch --ignore-not-existing -o ./lcov.info
+grcov . --binary-path ./target/debug/ -s . -t lcov --branch --ignore-not-existing -o ./lcov.info
 bash <(curl -s https://codecov.io/bash) -f lcov.info
 ```
 
